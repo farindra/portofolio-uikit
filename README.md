@@ -1,4 +1,4 @@
-# Farindra Portfolio
+# Farindra Portofolio
 ( Web Portfolio HTML Page )
 
   [![N|Solid](http://omnicode.am/pic/services/uikit.png)](https://getuikit.com/)
