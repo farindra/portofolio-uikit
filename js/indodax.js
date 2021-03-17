@@ -18,7 +18,14 @@ setInterval(() =>{
 
         kurs_btc = Number($('.price_btcidr_val').data('sort'));
         
-        saldo = SALDO_BTC + Number($('tr[href$="https://indodax.com/market/BTCIDR"]').children().last().html().replace(' BTC','').replace(',','.'));
+        try{
+
+            saldo = SALDO_BTC + Number($('tr[href$="https://indodax.com/market/BTCIDR"]').children().last().html().replace(' BTC','').replace(',','.'));
+       
+        } catch(ex) {
+            
+            saldo = SALDO_BTC;
+        }
         
         aset = original_aset + (saldo * kurs_btc);
 
